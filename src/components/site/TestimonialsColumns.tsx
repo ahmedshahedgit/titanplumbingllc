@@ -31,9 +31,9 @@ export function TestimonialsColumns() {
     <section id="stories" className="mx-auto max-w-7xl px-5 py-24 sm:px-8 sm:py-32">
       <SectionHead eyebrow="16 reviews" title="Customer stories" sub="Real experiences from customers who called Titan Plumbing." className="mx-auto text-center [&_p]:mx-auto [&_p]:justify-center" />
       <div className="mask-y mt-14 grid max-h-[740px] gap-5 overflow-hidden md:grid-cols-2 lg:grid-cols-3">
-        <Column items={cols[0]} duration={38} />
-        <Column items={cols[1]} duration={46} className="hidden md:block" />
-        <Column items={cols[2]} duration={42} className="hidden lg:block" />
+        <Column items={cols[0]!} duration={38} />
+        <Column items={cols[1]!} duration={46} className="hidden md:block" />
+        <Column items={cols[2]!} duration={42} className="hidden lg:block" />
       </div>
     </section>
   );

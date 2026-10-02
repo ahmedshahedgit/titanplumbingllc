@@ -18,7 +18,7 @@ const problems = [
 
 export function ProblemSelector() {
   const [active, setActive] = useState(0);
-  const p = problems[active];
+  const p = problems[active] ?? problems[0]!;
   return (
     <section className="mx-auto max-w-7xl px-5 py-24 sm:px-8 sm:py-32">
       <SectionHead eyebrow="Diagnose" title="What’s going wrong?" sub="Tell us what’s happening and find the right plumbing service." />
