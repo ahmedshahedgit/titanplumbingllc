@@ -51,4 +51,4 @@ export const REVIEWS = [
   ["Anthony Ellis", "very prompt professional work. had me all fixed up and inspected fast and made sure the job was done right"],
   ["Amber Brunskill", "Jake came to unclog some pipes for us and did amazing! He was quick and efficient and he made sure things were all squared away properly. If you’re looking for a great plumber Jake’s the man to call. Titan plumbing will be our choice from here on out."],
   ["Joey Sleevar", "Jake went above and beyond when i called him with a back up in my pipes in my country home i was remodeling. He came out at 8:30 at night and located the problem and starting digging by hand to our septic tank. then the very next day we dug up our old cast septic pipe and replaced it and back filled it with pea gravel."],
-].map(([name, text]) => ({ name, text }));
+].map(([name, text]) => ({ name: name as string, text: text as string }));
