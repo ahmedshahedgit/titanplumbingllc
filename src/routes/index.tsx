@@ -1,24 +1,45 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/site/Hero";
+import { EmergencyBar } from "@/components/site/EmergencyBar";
+import { ProblemSelector } from "@/components/site/ProblemSelector";
+import { ServicesSlider } from "@/components/site/ServicesSlider";
+import { TrustSection } from "@/components/site/TrustSection";
+import { Projects } from "@/components/site/Projects";
+import { BeforeAfter } from "@/components/site/BeforeAfter";
+import { ReelCards } from "@/components/site/ReelCards";
+import { TestimonialsColumns } from "@/components/site/TestimonialsColumns";
+import { FinalCTA } from "@/components/site/FinalCTA";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = "Titan Plumbing, LLC — Plumber in El Paso, IL";
+const description = "Reliable, affordable plumbing for El Paso, IL and surrounding communities. Licensed, insured, bonded. Call or text 309-260-0945.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main>
+      <Hero />
+      <EmergencyBar />
+      <ProblemSelector />
+      <ServicesSlider />
+      <TrustSection />
+      <Projects />
+      <BeforeAfter />
+      <ReelCards />
+      <TestimonialsColumns />
+      <FinalCTA />
+    </main>
   );
 }
