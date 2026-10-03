@@ -11,7 +11,7 @@ export const IMG = { hero, drain, burst, heater, bathroom, commercial, after, be
 
 export const PHONE_DISPLAY = "309-260-0945";
 export const PHONE_TEL = "tel:+13092600945";
-export const SMS = "sms:+13092600945?&body=Hi%20Titan%20Plumbing%2C%20I%27d%20like%20to%20book%20a%20plumber.";
+export const SMS = "sms:+13092600945?body=Hi%20Titan%20Plumbing%2C%20I%27d%20like%20to%20book%20a%20plumber.";
 export const EMAIL = "titanplumbingep@gmail.com";
 // Replace with the official Titan Plumbing, LLC Messenger link (e.g. https://m.me/yourpage)
 export const MESSENGER_URL = "https://www.facebook.com/search/top?q=Titan%20Plumbing%2C%20LLC";
