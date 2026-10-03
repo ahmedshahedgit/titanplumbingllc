@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef, useState } from "react";
 import { MapPin, Phone, CalendarCheck, Menu, X, ShieldCheck } from "lucide-react";
-import { IMG, HERO_VIDEO_URL, NAV, PHONE_DISPLAY, PHONE_TEL, LICENSE } from "@/lib/site";
+import { IMG, HERO_VIDEO_URL, NAV, PHONE_DISPLAY, PHONE_TEL, LICENSE, SMS } from "@/lib/site";
 import { MagneticButton } from "./ui";
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -83,7 +83,7 @@ export function Hero() {
               <Phone className="h-5 w-5" />
               <span className="flex flex-col items-start leading-tight"><span className="text-[0.65rem] opacity-80">Call or text</span>{PHONE_DISPLAY}</span>
             </MagneticButton>
-            <MagneticButton href="#contact" variant="ghost"><CalendarCheck className="h-5 w-5" />Book a plumber</MagneticButton>
+            <MagneticButton href={SMS} variant="ghost"><CalendarCheck className="h-5 w-5" />Book a plumber</MagneticButton>
           </motion.div>
         </div>
 
